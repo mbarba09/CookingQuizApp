@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.cookingquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Banner for each question. Used for Every Question -->
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/bannerDescription"
+            android:elevation="@dimen/defaultElevation"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/pasta" />
+        <!--Quiz Question Topic. Used for Every Question-->
+        <TextView
+            android:id="@+id/quizHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_marginBottom="@dimen/startHeaderPaddingBottom"
+            android:layout_weight=".3"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/startHeaderPaddingEnd"
+            android:paddingLeft="@dimen/startHeaderPaddingStart"
+            android:paddingRight="@dimen/startHeaderPaddingEnd"
+            android:paddingStart="@dimen/startHeaderPaddingStart"
+            android:text="@string/header_1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/startHeaderText" />
+        <!--Quiz Question View. Used for Every Question-->
+        <TextView
+            android:id="@+id/quizQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_gravity="top"
+            android:layout_weight=".3"
+            android:paddingEnd="@dimen/questionTextPaddingEnd"
+            android:paddingLeft="@dimen/questionTextPaddingStart"
+            android:paddingRight="@dimen/questionTextPaddingEnd"
+            android:paddingStart="@dimen/questionTextPaddingStart"
+            android:text="@string/quiz_question"
+            android:textAlignment="center"
+            android:visibility="gone" />
+        <!--A fun Image to start with. This is only displayed on the splash screen-->
+        <ImageView
+            android:id="@+id/burger"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_marginBottom="@dimen/startImageMarginBottom"
+            android:layout_weight=".5"
+            android:contentDescription="@string/burgerDescription"
+            android:scaleType="fitCenter"
+            android:src="@drawable/burger" />
+        <!--Checkbox View group-->
+        <LinearLayout
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_marginEnd="@dimen/checkboxMarginEnd"
+            android:layout_marginLeft="@dimen/checkboxMarginStart"
+            android:layout_marginRight="@dimen/checkboxMarginEnd"
+            android:layout_marginStart="@dimen/checkboxMarginStart"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--Checkbox Question 1-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--reference: http://video.udacity-data.com.s3.amazonaws.com/topher/2017/July/595ab9de_common-android-views-cheat-sheet/common-android-views-cheat-sheet.pdf-->
+                <CheckBox
+                    android:id="@+id/checkboxOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/checkboxText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--Checkbox Question 2-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/checkboxText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--Checkbox Question 3-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxOption3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/checkboxText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--Checkbox Question 4-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkboxOption4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/checkboxText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/editTextMargin"
+            android:hint="@string/question3Hint"
+            android:inputType="text"
+            android:visibility="gone" />
+
+        <!--Radio Group for Questions of this type-->
+        <RadioGroup
+            android:id="@+id/quizRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/radioPaddingBottom"
+            android:paddingEnd="@dimen/radioPaddingEnd"
+            android:paddingLeft="@dimen/radioPaddingStart"
+            android:paddingRight="@dimen/radioPaddingEnd"
+            android:paddingStart="@dimen/radioPaddingStart"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_activity_radio_1" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_activity_radio_2" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_activity_radio_3" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_activity_radio_4" />
+        </RadioGroup>
+
+        <!--View for scoring-->
+        <LinearLayout
+            android:id="@+id/score_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/weightedZero"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--Displays the score-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/score_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/scoreText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/outOfFive"
+                    android:textSize="@dimen/scoreText" />
+            </LinearLayout>
+            <!--displays a message based on what the user scored-->
+            <TextView
+                android:id="@+id/commentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/commentPaddingEnd"
+                android:paddingStart="@dimen/commentPaddingStart"
+                android:text="@string/placeholder"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/commentText" />
+        </LinearLayout>
+        <!--Button. Used for submitting and navigating through the app-->
+        <Button
+            android:id="@+id/quizButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/buttonMarginBottom"
+            android:background="@android:color/black"
+            android:elevation="@dimen/defaultElevation"
+            android:onClick="onClick"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/start_button"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttonText" />
+    </LinearLayout>
+</ScrollView>
+

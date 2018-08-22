@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--weighted dimensions-->
+    <dimen name="weightedZero">0dp</dimen>
+
+    <!--elevation-->
+    <dimen name="defaultElevation">8dp</dimen>
+
+    <!--text size-->
+    <dimen name="startHeaderText">32sp</dimen>
+    <dimen name="scoreText">48sp</dimen>
+    <dimen name="commentText">24sp</dimen>
+    <dimen name="buttonText">14sp</dimen>
+
+    <!--padding-->
+    <dimen name="startHeaderPaddingStart">18dp</dimen>
+    <dimen name="startHeaderPaddingEnd">18dp</dimen>
+    <dimen name="startHeaderPaddingBottom">0dp</dimen>
+
+    <dimen name="questionTextPaddingStart">24dp</dimen>
+    <dimen name="questionTextPaddingEnd">24dp</dimen>
+
+    <dimen name="radioPaddingStart">24dp</dimen>
+    <dimen name="radioPaddingEnd">24dp</dimen>
+    <dimen name="radioPaddingBottom">24dp</dimen>
+
+    <dimen name="commentPaddingEnd">24dp</dimen>
+    <dimen name="commentPaddingStart">24dp</dimen>
+
+    <dimen name="buttonPadding">8dp</dimen>
+
+    <!--margin-->
+    <dimen name="startImageMarginBottom">24dp</dimen>
+    <dimen name="buttonMarginBottom">24dp</dimen>
+    <dimen name="editTextMargin">16dp</dimen>
+    <dimen name="checkboxMarginStart">16dp</dimen>
+    <dimen name="checkboxMarginEnd">16dp</dimen>
+</resources>

@@ -1,0 +1,86 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Cooking Quiz</string>
+    <string name="submitButton">Submit</string>
+    <string name="start_button">Start Quiz!</string>
+    <string name="reset_button">Reset!</string>
+    <string name="placeholder">placeholder</string>
+
+    <!--Log Strings-->
+    <string name="scoreLog">Your Score: </string>
+    <!--Descriptions-->
+    <string name="bannerDescription">Image banner to represent where you are in the quiz</string>
+    <string name="burgerDescription">Animated image of a burger. aren\'t burgers delicious?</string>
+    <!--Main Activity Page-->
+    <string name="header_1">Welcome! \n Click Below to Begin!</string>
+    <string name="quiz_question">This will be a question one day!</string>
+    <!--Quiz #1 radio group-->
+    <string name="main_activity_radio_1">remember that one time?</string>
+    <string name="main_activity_radio_2">soon my child&#8230; soon</string>
+    <string name="main_activity_radio_3">luke&#8230; i am your father?</string>
+    <string name="main_activity_radio_4">this is a bunch of gibberish :)</string>
+
+    <!--Quiz #1 Checkbox-->
+    <string name="quiz_1_header">Let\'s Start With Pasta!</string>
+    <string name="quiz_1_question">This one is easy. What ingredients are typically found in spaghetti?</string>
+    <!--Quiz #1 radio group-->
+    <string name="quiz_1_checkbox_1">Pasta</string> <!--Correct Answer-->
+    <string name="quiz_1_checkbox_2">Salt</string>  <!--Correct Answer-->
+    <string name="quiz_1_checkbox_3">Parsely</string>   <!--Correct Answer-->
+    <string name="quiz_1_checkbox_4">Cream</string>
+
+    <!--Quiz #2 Radio Group-->
+    <string name="quiz_2_header">Bread is Always Best!</string>
+    <string name="quiz_2_question">What Ingredient does bread rely on to grow?</string>
+    <!--Quiz #2 radio group-->
+    <string name="quiz_2_radio_1">Milk</string>
+    <string name="quiz_2_radio_2">Water</string>
+    <string name="quiz_2_radio_3">Yeast</string>    <!--Correct Answer-->
+    <string name="quiz_2_radio_4">I read yeast and all could think about was beer.</string>
+
+    <!--Quiz #3 Edit Text-->
+    <string name="quiz_3_header">Knife Cuts for Days!</string>
+    <string name="quiz_3_question">How are the vegetables cut in the picture above?</string>
+    <string name="question3Hint">Dice, Julienne, Bruinoise, Please help Me</string>
+    <string name="answer3">julienne</string>
+
+    <!--Quiz #4-->
+    <string name="quiz_4_header">Those Tricky Tomatoes!</string>
+    <string name="quiz_4_question">Tomatoes can be tricky to cut! What kind of knife will make this task easier?</string>
+    <!--Quiz #4 radio group-->
+    <string name="quiz_4_radio_1">Serrated Knife</string>   <!--Correct Answer-->
+    <string name="quiz_4_radio_2">Chefs Knife</string>
+    <string name="quiz_4_radio_3">Pairing Knife</string>
+    <string name="quiz_4_radio_4">I bled out about 30 minutes ago.</string>
+
+    <!--Quiz #5-->
+    <string name="quiz_5_header">The Science of Baking!</string>
+    <string name="quiz_5_question">Baking is not my thing, but its always good to know this. Approximately how many teaspoons are in a tablespoon?</string>
+    <!--Quiz #5 radio group-->
+    <string name="quiz_5_radio_1">1</string>
+    <string name="quiz_5_radio_2">2</string>
+    <string name="quiz_5_radio_3">3</string>    <!--Correct Answer-->
+    <string name="quiz_5_radio_4">Tablespoons don\'t exist. Chopsticks are all you need.</string>
+
+    <!--Results String Resources-->
+    <string name="results_header">" \"My gran could do it better! And she is dead!\" "</string>
+    <string name="results_quote">- Gordon Ramsay</string>
+    <!--Get Score-->
+    <string name="outOfFive">/5</string>
+    <!--Score Responses-->
+    <string name="zeroOfFive">-silence-</string>
+    <string name="oneOfFive">at least you got one?</string>
+    <string name="twoOfFive">Two of five &#8230; \nThats is still an F</string>
+    <string name="threeOfFive">Congrats! \n You managed to not fail!</string>
+    <string name="fourOfFive">Well look at you! \nSomeone cooks.</string>
+    <string name="fiveOfFive">Bravo! 10/10! \noh wait &#8230;</string>
+    <string name="error">It seems like something went wrong. Sorry about that!</string>
+    <!--Score Toasts-->
+    <string name="toastZero">0/5 -violins playing in the background-</string>
+    <string name="toastOne">1/5 good luck the next time</string>
+    <string name="toastTwo">2/5 technically you got 40%, but it is still failing</string>
+    <string name="toastThree">3/5 not bad. Try again! I believe!</string>
+    <string name="toastFour">4/5 Looks like we got a winner here. Watch out for this guy? girl? puppy?</string>
+    <string name="toastFive">5/5 Oh Wow. I didn\'t get a 5/5 and I made this app. Good Game my friend!</string>
+    <string name="toastError">there is a problem here&#8230;</string>
+
+</resources>
